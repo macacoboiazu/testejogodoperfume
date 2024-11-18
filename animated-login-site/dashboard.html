@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artigos de Luxo - Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">Luxury Items</div>
+        <div class="nav-links">
+            <a href="dashboard.html" class="active">Home</a>
+            <a href="collections.html">Coleções</a>
+            <a href="gameroom.html">Game Room</a>
+            <a href="news.html">Novidades</a>
+            <a href="#" id="logoutBtn">Sair</a>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <h1>Coleção Exclusiva</h1>
+        <p>Descubra o extraordinário mundo do luxo</p>
+    </header>
+
+    <main class="products-grid">
+        <section class="products">
+            <article class="product-card" data-product-id="relogio-luxo">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30" alt="Relógio de Luxo">
+                    <div class="magnifier"></div>
+                </div>
+                <div class="product-info">
+                    <h2>Relógio Cronógrafo Platinum</h2>
+                    <p class="price">R$ 85.000</p>
+                    <p class="description">
+                        Uma obra-prima da relojoaria suíça, este cronógrafo em platina combina precisão excepcional com design atemporal. 
+                        Movimento automático, reserva de marcha de 72 horas e resistência à água de 100 metros.
+                    </p>
+                    <button class="btn-details">Ver Detalhes</button>
+                </div>
+            </article>
+
+            <article class="product-card" data-product-id="bolsa-premium">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1594534475808-b18fc33b045e" alt="Bolsa de Couro">
+                    <div class="magnifier"></div>
+                </div>
+                <div class="product-info">
+                    <h2>Bolsa Artesanal Italian Leather</h2>
+                    <p class="price">R$ 12.500</p>
+                    <p class="description">
+                        Confeccionada em couro italiano premium, cada peça é única e feita à mão por artesãos mestres. 
+                        Interior em camurça, detalhes em ouro 18k e compartimentos organizados estrategicamente.
+                    </p>
+                    <button class="btn-details">Ver Detalhes</button>
+                </div>
+            </article>
+
+            <article class="product-card" data-product-id="perfume-royal">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1601921004897-b7d582836990" alt="Perfume Luxuoso">
+                    <div class="magnifier"></div>
+                </div>
+                <div class="product-info">
+                    <h2>Parfum Royal Essence</h2>
+                    <p class="price">R$ 3.800</p>
+                    <p class="description">
+                        Uma fragrância exclusiva que combina notas raras de flores exóticas com âmbar e madeiras preciosas. 
+                        Frasco em cristal Baccarat com detalhes folheados a ouro.
+                    </p>
+                    <button class="btn-details">Ver Detalhes</button>
+                </div>
+            </article>
+
+            <article class="product-card" data-product-id="joia-premium">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f" alt="Jóia Exclusiva">
+                    <div class="magnifier"></div>
+                </div>
+                <div class="product-info">
+                    <h2>Colar Diamond Collection</h2>
+                    <p class="price">R$ 175.000</p>
+                    <p class="description">
+                        Um deslumbrante colar em ouro branco 18k com diamantes de lapidação brilhante, totalizando 8.5 quilates. 
+                        Certificado de autenticidade e estojo em couro premium inclusos.
+                    </p>
+                    <button class="btn-details">Ver Detalhes</button>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <div class="overlay" id="overlay"></div>
+    <div class="close-expanded" id="closeExpanded">&times;</div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Sobre Nós</h3>
+                <p>Especialistas em artigos de luxo desde 1990</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contato</h3>
+                <p>Email: contato@luxuryitems.com</p>
+                <p>Tel: +55 (11) 99999-9999</p>
+            </div>
+            <div class="footer-section">
+                <h3>Redes Sociais</h3>
+                <div class="social-links">
+                    <a href="#"><i class='bx bxl-instagram'></i></a>
+                    <a href="#"><i class='bx bxl-facebook'></i></a>
+                    <a href="#"><i class='bx bxl-twitter'></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Luxury Items. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <div class="fullscreen-overlay">
+        <div class="close-fullscreen">&times;</div>
+        <img class="fullscreen-image" src="" alt="Produto em tela cheia">
+    </div>
+
+    <script src="dashboard.js"></script>
+</body>
+</html>
