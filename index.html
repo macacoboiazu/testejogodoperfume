@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Animado</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="wrapper">
+        <form id="loginForm">
+            <h1>Login</h1>
+            <div class="input-box">
+                <input type="text" placeholder="Usuário" required>
+                <i class='bx bxs-user'></i>
+            </div>
+            <div class="input-box">
+                <input type="password" placeholder="Senha" required>
+                <i class='bx bxs-lock-alt'></i>
+            </div>
+
+            <div class="remember-forgot">
+                <label><input type="checkbox"> Lembrar-me</label>
+                <a href="#" id="forgotPassword">Esqueceu a senha?</a>
+            </div>
+
+            <button type="submit">Login</button>
+
+            <div class="register-link">
+                <p>Não tem uma conta? <a href="#" id="showRegister">Registre-se</a></p>
+            </div>
+        </form>
+
+        <!-- Formulário de Registro (inicialmente oculto) -->
+        <form id="registerForm" style="display: none;">
+            <h1>Registro</h1>
+            <div class="input-box">
+                <input type="text" placeholder="Escolha um usuário" required>
+                <i class='bx bxs-user'></i>
+            </div>
+            <div class="input-box">
+                <input type="password" placeholder="Escolha uma senha" required>
+                <i class='bx bxs-lock-alt'></i>
+            </div>
+            <div class="input-box">
+                <input type="password" placeholder="Confirme a senha" required>
+                <i class='bx bxs-lock-alt'></i>
+            </div>
+
+            <button type="submit">Registrar</button>
+
+            <div class="register-link">
+                <p>Já tem uma conta? <a href="#" id="showLogin">Fazer Login</a></p>
+            </div>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
